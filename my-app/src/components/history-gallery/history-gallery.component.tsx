@@ -9,6 +9,7 @@ import { fullGalleryData } from '../../application-data/gallery-data';
 import './history-gallery.component.scss'
 import { ClickHandlerProps } from 'react-photo-album';
 import PopUpImage from '../pop-up-image/pop-up-image.component';
+const bodyScroll = require('body-scroll-toggle');
 
 type Photo = {
   src: string,
@@ -20,14 +21,21 @@ type Photo = {
 }
 
 const HistoryGallery = () => {
+
  // eslint-disable-next-line
   const [photos, setPhotos] = useState<Photo[]>(fullGalleryData);
   const [isClicked, setIsClicked] = useState(false);
   const [clickedUrl, setClickedUrl] = useState('');
 
+  const imageHeigth = (window.innerWidth<720) 
+                      ? 300
+                      : 150
+
+  
   const handleClick = (e: ClickHandlerProps<Photo>) => {
     setClickedUrl(e.photo.src);
     setIsClicked(true);
+    bodyScroll.disable();
   }
 
   // This block extracts all the sizes of the images on the remote hosting by url
@@ -54,7 +62,7 @@ const HistoryGallery = () => {
   //  console.log(photos);
 
   return (
-    <div className="history-gallery-wrapper">
+    <div id='history-gallery-wrapper' className="history-gallery-wrapper">
 
       {isClicked &&
        <PopUpImage
@@ -70,6 +78,7 @@ const HistoryGallery = () => {
         {photos.length
           ? <PhotoAlbum
             layout="rows"
+            targetRowHeight={imageHeigth}
             photos={photos}
             spacing={10}
             onClick={(e) => handleClick(e)}

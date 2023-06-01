@@ -1,0 +1,16 @@
+.slick-dots ul li{
+    position: relative;
+    height: 10px;
+    overflow:hidden; 
+    }
+
+.slick-dots ul li button:before {
+    background-color:#76B82A;
+    border: 1px solid white;
+    height: 8px;
+    width: 8px;
+    text-indent: -9999px;
+    overflow:hidden; 
+    }
+
+

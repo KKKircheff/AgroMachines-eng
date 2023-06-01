@@ -1,5 +1,6 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import './pop-up-image.styles.scss';
+const bodyScroll = require('body-scroll-toggle');
 
 type PopUpProps = {
   url: string;
@@ -7,14 +8,20 @@ type PopUpProps = {
   setIsClicked: (newValue: boolean) => void;
 };
 
+ 
 const PopUpImage = ({ url, isClicked, setIsClicked }: PopUpProps) => {
-    
-  
 
-  const handelClick=(()=>{
+  if (window.innerWidth<720) {
+    bodyScroll.enable();
     setIsClicked(false);
-  })
+    }
+
+  const handelClick = (() => {
+    bodyScroll.enable();
+    setIsClicked(false);
   
+  })
+
   return (
     <div
       onClick={handelClick}

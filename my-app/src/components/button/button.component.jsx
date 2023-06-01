@@ -6,7 +6,6 @@ const BUTTON_TYPE = {
     default: 'default'
 }
 
-
 export default function Button ({ children, buttonType, ...otherProps }) {
     return (
         <button

@@ -86,7 +86,9 @@
 
   &.translate-down {
     p {
-      transform: translateY(220px);
+      transform: translateY(276px);
+      padding: 0;
+      margin: 0 0 0 calc(36vw);
     }
   }
 }
@@ -173,6 +175,7 @@ ul {
   position: relative;
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
   gap: 5px;
   left: 100vw;
   max-height: 0px;
@@ -181,6 +184,7 @@ ul {
   transition: all 0.3s ease-in-out;
   &.active {
     left: 0vw;
+    min-height: 270px;
     max-height: 500px;
   }
 }

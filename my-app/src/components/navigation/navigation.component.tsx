@@ -1,9 +1,10 @@
-import React, { useEffect } from 'react';
-import { Item } from '../../App';
-import { Link } from 'react-router-dom';
+import React, { useEffect, useRef } from 'react';
+import { Item } from '../../application-data/navbar-config';
+// import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import { FaAngleDown } from 'react-icons/fa'
 import { HiOutlinePhone } from 'react-icons/hi';
+import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 import './navigation.styles.scss';
 
@@ -13,11 +14,13 @@ interface NavigationProps {
 }
 
 const Navigation = ({ items }: NavigationProps) => {
+
     
     const [isToggled, setIsToggled] = useState(false);
     const [closeSubMenu, setCloseSubMenu] = useState(false);
     const [isTransparentNavbar, setIsTransparentNavbar] = useState(false);
-
+    
+    const rootRef = useRef<HTMLDivElement | null>(null);
     const screenSizes = {
         small: 720
     }
@@ -25,11 +28,24 @@ const Navigation = ({ items }: NavigationProps) => {
     const toggleSubMenu = (event: React.MouseEvent<HTMLSpanElement, MouseEvent>) => {
         event.currentTarget.classList.toggle('toggled');
     }
+    
+    const calculateDuration = ()=>{
+        return (1500);
+    }
+
 
     const renderItems = () => items.map((item, index) => (
         <li key={index}>
             {item.url
-                ? <Link to={item.url} onClick={() => closeMenu(true)}>{item.name}</Link>
+                ? <Link
+                      activeClass="active"
+                      to={item.url}
+                      spy={false}
+                      smooth={true} 
+                      offset={item.offset}
+                      duration={calculateDuration}
+                  onClick={() => closeMenu(true)}>{item.name}
+                  </Link>
                 : <span onClick={toggleSubMenu}>
                     {item.name}
                     <FaAngleDown className='submenu-dropdown-icon' />
@@ -44,7 +60,7 @@ const Navigation = ({ items }: NavigationProps) => {
         <ul className="sub-menu">
             {children.map((child, index) => (
                 <li key={index}>
-                    <Link to={child.url!} onClick={() => closeMenu(true)}>
+                    <Link to={child.url!}  onClick={() => closeMenu(true)}>
                         {child.name}
                     </Link>
                 </li>
@@ -64,6 +80,9 @@ const Navigation = ({ items }: NavigationProps) => {
         if (closeSubMenu && window.innerWidth > screenSizes.small) {
             closeMenu(true);
         }
+        if (rootRef.current) {
+            const totalHeight = rootRef.current.offsetHeight;
+        }
         // eslint-disable-next-line
     }, [closeSubMenu, screenSizes.small]);
 
@@ -82,21 +101,8 @@ const Navigation = ({ items }: NavigationProps) => {
     }, []);
 
 
-
-
-
-    // const addTransparencyToNavbar = () => {
-    //     if (window.scrollY >= 60) {
-    //         setIsTransparentNavbar(true)
-    //     } else {
-    //         setIsTransparentNavbar(false)
-    //     }
-    // }
-
-    // window.addEventListener('scroll', addTransparencyToNavbar)
-
     return (
-        <div className='main-wrapper'>
+        <div ref={rootRef} className='main-wrapper'>
             <div className='under-navigation-layer'></div>
             <nav className={
                 isTransparentNavbar

@@ -25,7 +25,7 @@ const InfoSection = () => {
                 })}
             </div>
 
-            <div className="card-content-container">
+            <div id='card-content-container' className="card-content-container">
                 {cardContent.map((cardItem, index) => {
                     const imgSide = (index % 2 === 0)
                         ? 'right'
@@ -41,7 +41,7 @@ const InfoSection = () => {
                 })}
             </div>
             <div className="logos-image-container" data-aos="fade-in">
-                <img src="https://i.ibb.co/kqpKwqY/Honey-Comb-Wire-Logos.png" alt="поливни макари марки" />
+                <img src="https://i.ibb.co/3pbDg6T/Logos-maller.png" alt="поливни макари марки" />
             </div>
         </div>
     )

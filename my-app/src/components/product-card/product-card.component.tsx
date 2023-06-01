@@ -17,7 +17,7 @@ type CardProps = {
 
 
 const ProductCard = ({ url, mainTitle, title, subtitle, content, price, imgSide }: CardProps) => {
-
+  
   const [isClicked, setIsClicked] = useState(false);
   const [popUpUrl, setPopUpUrl] = useState('');
 
@@ -46,7 +46,8 @@ const ProductCard = ({ url, mainTitle, title, subtitle, content, price, imgSide 
             <p>избрана оферта</p>
           </div>
           <div className="top-banner-icon-section" data-aos="fade-left">
-            <p><GiWaterRecycling /></p>
+            <p>agro</p>
+            <p>machines</p>
           </div>
           <div className="title-group" data-aos="zoom-in">
             <h2 className='product-card-title'>{mainTitle}</h2>
@@ -54,7 +55,7 @@ const ProductCard = ({ url, mainTitle, title, subtitle, content, price, imgSide 
             <h2 className="product-card-subtitle">Помпа: <span>{subtitle}</span></h2>
           </div>
           <h4 data-aos="zoom-in">Цена: <span>{price} лева</span></h4>
-          <p className="product-card-content" data-aos="zoom-in">{content}</p>
+          <p className="product-card-content" data-aos="zoom-in"  data-aos-offset="50">{content}</p>
         </div>
 
       </div>

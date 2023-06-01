@@ -29,9 +29,9 @@ const productCards = productsData.map((product, index)=>{
 
       <HeaderHomePage />
       <InfoSection />
-      { productCards && <div>{productCards}</div>} 
-      <ContatForm />
+      { productCards && <div id='product-card-wrapper'>{productCards}</div>} 
       <HistoryGallery />
+      <ContatForm />
       <FooterHomePage />
       <Outlet />
     </div>

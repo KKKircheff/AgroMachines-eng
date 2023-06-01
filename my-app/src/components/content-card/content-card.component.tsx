@@ -1,6 +1,5 @@
 import React from 'react';
 import './content-card.style.scss';
-import AOS from 'aos';
 
 type CardProps = {
   url: string,
@@ -11,7 +10,7 @@ type CardProps = {
 }
 
 const ContentCard = ({ url, title, subtitle, content, imgSide }: CardProps) => {
-
+  
   return (
     <div className={`content-card ${imgSide}`}  data-aos="fade-in">
       <img src={url} alt="irrigation reel tumbnail" />
