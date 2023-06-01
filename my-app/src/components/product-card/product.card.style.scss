@@ -69,16 +69,16 @@
     .title-group {
       .product-card-title {
         margin: 3vw 0;
-        font-size: calc(1rem + 1vw);
+        font-size: calc(.7rem + 1vw);
         color: $color-primary-0;
         line-height: 0.8rem;
       }
       .product-card-subtitle {
         margin: 0 0 1.3vw 0;
-        font-size: calc(0.8rem + 1vw);
+        font-size: calc(0.5rem + 1vw);
         color: $color-secondary-1-0;
         span {
-          font-size: calc(0.9rem + 1vw);
+          font-size: calc(0.5rem + 1vw);
           margin-left: 5px;
           color: $color-primary-0;
         }
@@ -87,11 +87,11 @@
     h4 {
       margin: 1vw 0 0 0;
       padding: 0;
-      font-size: calc(0.8rem + 1vw);
+      font-size: calc(0.5rem + 1vw);
       line-height: 0.5rem;
       color: $color-secondary-1-0;
       span {
-        font-size: calc(0.85rem + 1vw);
+        font-size: calc(0.5rem + 1vw);
         color: $color-primary-0;
         margin-left: 5px;
       }

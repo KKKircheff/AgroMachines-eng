@@ -43,7 +43,7 @@ const ProductCard = ({ url, mainTitle, title, subtitle, content, price, imgSide 
 
         <div className="content-section" >
           <div className="top-banner-title-section" data-aos="fade-right">
-            <p>hot deals</p>
+            <p>product occasions</p>
           </div>
           <div className="top-banner-icon-section" data-aos="fade-left">
             <p>agro</p>
@@ -54,7 +54,7 @@ const ProductCard = ({ url, mainTitle, title, subtitle, content, price, imgSide 
             <h2 className='product-card-subtitle'>Brand: <span>{title}</span></h2>
             <h2 className="product-card-subtitle">Pomp brand: <span>{subtitle}</span></h2>
           </div>
-          <h4 data-aos="zoom-in">Price: <span>{price} leva</span></h4>
+          <h4 data-aos="zoom-in">Price: <span>{price} euro</span></h4>
           <p className="product-card-content" data-aos="zoom-in"  data-aos-offset="50">{content}</p>
         </div>
 
