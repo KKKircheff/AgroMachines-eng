@@ -1,20 +1,23 @@
 export const cardContent = [
-        {
-            url:"https://i.ibb.co/CM58BDr/img-reel-1.jpg",
-            title:"Поливни системи",
-            subtitle:"за селското стопанство",
-            content:"Поливните макари осигуряват възможност за доставяне на вода директно до посевите. Това е особено полезно по време на сухи периоди или в области с ограничени водни ресурси. Растенията получават необходимото количество вода за растеж и развитие, което подобрява тяхната продуктивност и качество. Поливните макари могат да осигурят равномерно разпределение на водата върху посевите. Така се избягва неравномерното поливане и създаването на зони с прекалено много или малко вода. Това допринася за оптимално използване на водата и намаляване на нежеланите отпадъци."
-        },
-        {
-            url:"https://i.ibb.co/481qkwP/img-reel-2.jpg",
-            title:"Нидерландия",
-            subtitle:"2.5 по-малка от България",
-            content:"Но според статистиката Нидерландия е вторият най-голям износител в света на селскостопанска продукция. В момента повече от половината от земеделската земя се използва за отглеждане на храни. Успешното развитие и производство се дължи на използването на най-новите технологии и машини. Поради постоянното иновативно развитие на местните фермери, често на вторичния пазар се появяват интересни оферти за качествено замеделско оборудване втора употреба. Но изгодните оферти 'цена-качество' се продават бързо... "
-        },
-        {
-            url:"https://i.ibb.co/p166Fnj/img-reel-3.jpg",
-            title:"Поливни системи",
-            subtitle:"от Agro-machines.nl",
-            content:"Ние сме специализирани в инспекцията и доставката на поливни макари втора употреба и високо-напорни помпи за тях. Всяка седмица се появяват много нови оферти. Но както при всеки продукт има качествени и запазени, а има и доста амортизирани, които не си заслужават парите. Ние следим актуалните оферти. Търсим и други възможни, чрез нашата мрежа. Проверяваме състоянието, закупуваме и доставяме до България по поръчка системи за напояване на най-изгодни цени. "
-        }
-    ]
+  {
+    url: 'https://i.ibb.co/CM58BDr/img-reel-1.jpg',
+    title: 'Irrigation Systems',
+    subtitle: 'for Agriculture',
+    content:
+      'Irrigation reels provide the opportunity to deliver water directly to the crops. This is particularly useful during dry periods or in areas with limited water resources. Plants receive the necessary amount of water for growth and development, which improves their productivity and quality. Irrigation reels can ensure even distribution of water over the crops, avoiding uneven watering and the creation of areas with too much or too little water. This contributes to the optimal use of water and reduces unwanted waste.',
+  },
+  {
+    url: 'https://i.ibb.co/481qkwP/img-reel-2.jpg',
+    title: 'Netherlands',
+    subtitle: '2.5 times smaller than Bulgaria',
+    content:
+      "But according to statistics, the Netherlands is the second-largest exporter of agricultural products in the world. Currently, more than half of the agricultural land is used for food cultivation. The successful development and production are attributed to the use of the latest technologies and machinery. Due to the continuous innovative development of local farmers, interesting offers for quality second-hand agricultural equipment often appear on the secondary market. However, the advantageous 'price-quality' offers sell quickly...",
+  },
+  {
+    url: 'https://i.ibb.co/p166Fnj/img-reel-3.jpg',
+    title: 'Irrigation Systems',
+    subtitle: 'from Agro-machines.nl',
+    content:
+      'We specialize in the inspection and delivery of second-hand irrigation reels and high-pressure pumps for them. Many new offers appear every week. However, just like with any product, there are quality and well-preserved ones, as well as quite a few worn-out ones that are not worth the money. We keep track of the current offers. We search for other possibilities through our network. We check the condition, purchase, and deliver irrigation systems to Bulgaria on demand at the most favorable prices.',
+  },
+];

@@ -67,17 +67,17 @@ const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
 
     if (!name || !email || !phonenumber || !message) {
             setIsFormValid(false);
-            setErrorMessage("Моля попълнете всички задължителни полетa във формата!");
+            setErrorMessage("Please fill in all required fields!");
             return;
             }
     if (!validateField(fieldsRegex.fullEmailAddress,email)) {
             setIsFormValid(false);
-            setErrorMessage('Грешно въведен мейл адреса!');
+            setErrorMessage('Wrong or uncomplete email address!');
             return
     }
     if (!validateField(fieldsRegex.fullPhoneNumber,phonenumber)) {
             setIsFormValid(false);
-            setErrorMessage('Грешно въведен телефонен номер!');
+            setErrorMessage('Not a valid phone number');
             return
            }
 
@@ -99,8 +99,8 @@ const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
 
   return (
     <div id='contact-form-container' className="contact-form-container" data-aos="fade-int">
-      <h2>Контакт с нас</h2>
-      <p>ако имате въпрос относно някой от нашите продукти или имате нужда от съдействие в Нидерландия за закупуване на земеделска техника</p>
+      <h2>Contact Us</h2>
+      <p>If you have any questions regarding any of our products or need assistance in the Netherlands for purchasing agricultural machinery.</p>
       <form 
         name='contact-form__v1'
         method='post'
@@ -109,7 +109,7 @@ const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
       >
         <input type="hidden" name="form-name" value='contact-form__v1' />
         <FormInputField
-          label='Имена'
+          label='First and last name'
           type='text'
           name='name'
           autoComplete='off'
@@ -118,7 +118,7 @@ const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
         />
 
         <FormInputField
-          label='Компния /опция/'
+          label='Company ( opitional)'
           type='text'
           name='company'
           autoComplete='off'
@@ -127,7 +127,7 @@ const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
         />
 
         <FormInputField
-          label='Телефон за контакт'
+          label='Phone number'
           type='text'
           name='phonenumber'
           autoComplete='off'
@@ -145,7 +145,7 @@ const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
         />
 
         <FormTextArea
-          label='Запитване'
+          label='Message'
           type='text'
           rows='8'
           cols='100'
@@ -155,7 +155,7 @@ const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
         />
 
         <div className="buttons-container">
-          <Button type='submit' buttonType={'default'}>изпрати</Button>
+          <Button type='submit' buttonType={'default'}>Send</Button>
         </div>
        {!isFormValid && <div className="form-error-message">{errorMessage}</div>}
       </form>

@@ -26,7 +26,7 @@
     h2 {
       margin: 0;
       padding: 0 3px;
-      line-height: 1.2rem;
+      line-height: 2rem;
       font-size: 1.1rem;
       color: $color-primary-0;
     }
@@ -68,13 +68,14 @@
     .content-wrapper > h2 {
       margin: 0;
       padding: 0 3px;
-      line-height: 1.2rem;
+      line-height: calc( 1.3rem + .7vw);
       font-size: calc(0.2rem + 1.6vw);
       color: $color-primary-0;
     }
 
     .counter-wrapper {
       margin: 0;
+      padding: 30px;
       .count-up {
         font-size: calc(3rem + 2vw);
       }
