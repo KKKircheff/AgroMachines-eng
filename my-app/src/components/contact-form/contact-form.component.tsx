@@ -118,7 +118,7 @@ const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
         />
 
         <FormInputField
-          label='Company ( opitional)'
+          label='Company (optional)'
           type='text'
           name='company'
           autoComplete='off'
