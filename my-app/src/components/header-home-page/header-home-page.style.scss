@@ -1,0 +1,57 @@
+@import '../../assets/app.colors.scss';
+
+.header-home-page-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  box-sizing: border-box;
+  background-color: $color-secondary-2-2;
+  
+  .left-side {
+    // background-color: green;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-left: 5%;
+    z-index: 1;
+    font-size: calc( .4rem + 2vw );
+    margin-top: 10vw;
+  }
+  h1 {
+    font-weight: 900;
+    line-height: 7vw;
+    color: white;
+    padding: 0;
+    margin: 0;
+  }
+  Button{
+    width: 80px;
+    margin-top: 12vw;
+  }
+}
+
+.right-side {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-end;
+  img {
+      width: 100%;
+      max-width: 720px;
+      object-fit: contain;
+  }
+}
+
+@media (min-width: 720px) {
+    .header-home-page-wrapper {
+        .left-side {
+            margin-top: calc( 1rem + 5%);
+        }
+
+        Button {
+            width: 200px;
+            margin-top: calc(4rem + 1.5vw);
+          }
+    }
+}

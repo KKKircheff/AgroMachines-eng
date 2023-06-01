@@ -1,0 +1,100 @@
+@import '../../assets/app.colors.scss';
+
+
+
+.button-container {
+  min-width: 120px;
+  width: auto;
+  height: 50px;
+  letter-spacing: 0.5px;
+  line-height: 50px;
+  padding: 0 35px 0 35px;
+  font-size: 15px;
+  background-color: $color-primary-0;
+  color: white;
+  text-transform: uppercase;
+  // font-family: 'Open Sans Condensed';
+  font-family: 'Sofia Sans Condensed', sans-serif;
+  font-weight: bolder;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  border: 1px solid white;
+
+  
+  &:active {
+    background-color: #626262;
+    color: white;
+  }
+
+  &.google-sign-in {
+    background-color: $color-primary-1;
+    color: white;
+    &:active {
+      background-color: $color-primary-1;
+     }
+  }
+
+  &.inverted {
+    background-color: white;
+    color: $color-primary-0;
+    border: 1px solid $color-primary-0;
+    &:active {
+      background-color: $color-primary-3;
+    }
+  }
+
+ 
+}
+
+@media (pointer: coarse) {
+  /* mobile device */
+}
+
+@media (pointer: fine), (pointer: none) {
+  /* desktop */
+  .button-container {
+
+    &:hover {
+      background-color: white;
+      color: $color-primary-0;
+      border: 1px solid $color-primary-0;
+    }
+    &:active {
+      background-color: $color-primary-0;
+      color: white;
+    }
+  
+
+    &.google-sign-in {
+      &:hover {
+        background-color: $color-primary-3;
+        color: white;
+        border: none;
+      }
+      &:active {
+       background-color: $color-primary-1;
+      }
+    
+    }
+    &.inverted {
+      &:hover {
+        background-color: $color-primary-0;
+        color: white;
+        border: none;
+      }
+      &:active {
+        background-color: $color-primary-0;
+      }
+    
+    }
+
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .button-container {
+  padding: 0 5px 0 5px;
+  }
+}

@@ -1,0 +1,43 @@
+Klaas Kloosterweg West 29a
+7954 PR Rouveen
+
+.color-primary-0 { color: #76B82A }	/* Main Primary color */
+.color-primary-1 { color: #B7E97D }
+.color-primary-2 { color: #91CC4D }
+.color-primary-3 { color: #599514 }
+.color-primary-4 { color: #3C7100 }
+
+.color-secondary-1-0 { color: #2E3B8B }	/* Main Secondary color (1) */
+.color-secondary-1-1 { color: #6C76B5 }
+.color-secondary-1-2 { color: #47529A }
+.color-secondary-1-3 { color: #1C2870 }
+.color-secondary-1-4 { color: #0B1555 }
+
+.color-secondary-2-0 { color: #CBA02E }	/* Main Secondary color (2) */
+.color-secondary-2-1 { color: #FFDF89 }
+.color-secondary-2-2 { color: #E1BB55 }
+.color-secondary-2-3 { color: #A47E17 }
+.color-secondary-2-4 { color: #7C5A00 }
+
+
+
+/* As RGBa codes */
+
+.rgba-primary-0 { color: rgba(118,184, 42,1) }	/* Main Primary color */
+.rgba-primary-1 { color: rgba(183,233,125,1) }
+.rgba-primary-2 { color: rgba(145,204, 77,1) }
+.rgba-primary-3 { color: rgba( 89,149, 20,1) }
+.rgba-primary-4 { color: rgba( 60,113,  0,1) }
+
+.rgba-secondary-1-0 { color: rgba( 46, 59,139,1) }	/* Main Secondary color (1) */
+.rgba-secondary-1-1 { color: rgba(108,118,181,1) }
+.rgba-secondary-1-2 { color: rgba( 71, 82,154,1) }
+.rgba-secondary-1-3 { color: rgba( 28, 40,112,1) }
+.rgba-secondary-1-4 { color: rgba( 11, 21, 85,1) }
+
+.rgba-secondary-2-0 { color: rgba(203,160, 46,1) }	/* Main Secondary color (2) */
+.rgba-secondary-2-1 { color: rgba(255,223,137,1) }
+.rgba-secondary-2-2 { color: rgba(225,187, 85,1) }
+.rgba-secondary-2-3 { color: rgba(164,126, 23,1) }
+.rgba-secondary-2-4 { color: rgba(124, 90,  0,1) }
+
