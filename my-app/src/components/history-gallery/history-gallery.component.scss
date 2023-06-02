@@ -1,61 +1,63 @@
 @import '../../assets/app.colors.scss';
 
 .history-gallery-wrapper {
-  color: white;
-  font-size: calc(0.5rem + 1vw);
+    color: white;
+    font-size: calc(0.5rem + 1vw);
 
-  h2 {
-    width: 70vw;
-    font-size: calc(0.5rem + 1.8vw);
-    background-color: $color-primary-0;
-    line-height: 2.7rem;
-    height: 45px;
-    padding: 0 0 0 15vw;
-    margin: calc(1rem + 2vw) 3vw;
-    clip-path: polygon(0 0, 100% 0, 96% 100%, 0% 100%);
-  }
-  h3 {
-    width: 60vw;
-    background-color: $color-primary-0;
-    height: 45px;
-    line-height: 2.7rem;
-    padding: 0 0 0 15vw;
-    margin: calc(1rem + 2vw) 3vw;
-    clip-path: polygon(0 0, 100% 0, 96% 100%, 0% 100%);
-  }
-
-  .history-gallery {
-    width: 95%;
-    margin: calc(1.5rem + 4vw) auto;
-
-    img {
-      transform: scale(100%);
-      transition: transform 0.2s;
-      z-index: 1;
-    }
-  }
-}
-@media (min-width: 720px) {
-  .history-gallery-wrapper {
     h2 {
-      width: 60%;
-      height: 50px;
-      line-height: 3rem;
+        width: 70vw;
+        font-size: calc(0.5rem + 1.8vw);
+        background-color: $color-primary-0;
+        line-height: 2.7rem;
+        height: 45px;
+        padding: 0 0 0 15vw;
+        margin: calc(1rem + 2vw) 3vw;
+        clip-path: polygon(0 0, 100% 0, 96% 100%, 0% 100%);
     }
-    
+
     h3 {
-        width: 50%;
-        height: 50px;
-        line-height: 3rem;
+        width: 60vw;
+        background-color: $color-primary-0;
+        height: 45px;
+        line-height: 2.7rem;
+        padding: 0 0 0 15vw;
+        margin: calc(1rem + 2vw) 3vw;
+        clip-path: polygon(0 0, 100% 0, 96% 100%, 0% 100%);
     }
 
     .history-gallery {
-      img:hover {
-        transform: scale(110%);
-        transition: transform 0.3s;
-        z-index: 2;
-        box-shadow: 0px 4px 9px 6px rgba(0, 0, 0, 0.24);
-      }
+        width: 95%;
+        margin: calc(1.5rem + 4vw) auto;
+
+        img {
+            transform: scale(100%);
+            transition: transform 0.2s;
+            z-index: 1;
+        }
     }
-  }
+}
+
+@media (min-width: 720px) {
+    .history-gallery-wrapper {
+        h2 {
+            width: 60%;
+            height: 50px;
+            line-height: 3rem;
+        }
+
+        h3 {
+            width: 50%;
+            height: 50px;
+            line-height: 3rem;
+        }
+
+        .history-gallery {
+            img:hover {
+                transform: scale(110%);
+                transition: transform 0.3s;
+                z-index: 2;
+                box-shadow: 0px 4px 9px 6px rgba(0, 0, 0, 0.24);
+            }
+        }
+    }
 }

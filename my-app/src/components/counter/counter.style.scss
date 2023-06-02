@@ -1,87 +1,89 @@
 @import '../../assets/app.colors.scss';
 
 .info-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border: 2px solid $color-primary-0;
-  border-radius: 5px;
-  margin: 10vw 5vw 0 5vw;
-  width: 300px;
-  height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid $color-primary-0;
+    border-radius: 5px;
+    margin: 10vw 5vw 0 5vw;
+    width: 300px;
+    height: 250px;
 
-  .separator {
-    height: 0px;
-    width: 60%;
-    margin: 10px auto 10px auto;
-    border: 1px solid $color-primary-1;
-  }
-
-  .content-wrapper {
-    margin: 10px;
-    font-weight: 600;
-    min-width: 80%;
-    text-align: center;
-    h2 {
-      margin: 0;
-      padding: 0 3px;
-      line-height: 2rem;
-      font-size: 1.1rem;
-      color: $color-primary-0;
+    .separator {
+        height: 0px;
+        width: 60%;
+        margin: 10px auto 10px auto;
+        border: 1px solid $color-primary-1;
     }
-  }
+
+    .content-wrapper {
+        margin: 10px;
+        font-weight: 600;
+        min-width: 80%;
+        text-align: center;
+
+        h2 {
+            margin: 0;
+            padding: 0 3px;
+            line-height: 2rem;
+            font-size: 1.1rem;
+            color: $color-primary-0;
+        }
+    }
 }
 
 .counter-wrapper {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  font-family: 800;
-  padding: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: 800;
+    padding: 40px;
 
-  .count-up {
-    font-family: 'Kanit', sans-serif;
-    color: $color-primary-0;
-    font-size: 5rem;
-    font-weight: 700;
-  }
+    .count-up {
+        font-family: 'Kanit', sans-serif;
+        color: $color-primary-0;
+        font-size: 5rem;
+        font-weight: 700;
+    }
 
-  span {
-    font-family: 'Raleway', sans-serif;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 700;
-    font-size: 3rem;
-    padding: 0;
-    line-height: 1rem;
-    color: $color-primary-1;
-  }
+    span {
+        font-family: 'Raleway', sans-serif;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        font-size: 3rem;
+        padding: 0;
+        line-height: 1rem;
+        color: $color-primary-1;
+    }
 }
 
 @media (min-width: 620px) {
-  .info-card {
-    margin: 4vw 0;
-    padding: 0;
-    width: 28vw;
-    height: 28vw;
+    .info-card {
+        margin: 4vw 0;
+        padding: 0;
+        width: 28vw;
+        height: 28vw;
 
-    .content-wrapper > h2 {
-      margin: 0;
-      padding: 0 3px;
-      line-height: calc( 1.3rem + .7vw);
-      font-size: calc(0.2rem + 1.6vw);
-      color: $color-primary-0;
-    }
+        .content-wrapper>h2 {
+            margin: 0;
+            padding: 0 3px;
+            line-height: calc(1.3rem + .7vw);
+            font-size: calc(0.2rem + 1.6vw);
+            color: $color-primary-0;
+        }
 
-    .counter-wrapper {
-      margin: 0;
-      padding: 30px;
-      .count-up {
-        font-size: calc(3rem + 2vw);
-      }
-      span {
-        font-size: 3.5rem;
-      }
+        .counter-wrapper {
+            margin: 0;
+            padding: 30px;
+
+            .count-up {
+                font-size: calc(3rem + 2vw);
+            }
+            span {
+                font-size: 3.5rem;
+            }
+        }
     }
-  }
 }

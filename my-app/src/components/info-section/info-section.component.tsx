@@ -6,13 +6,9 @@ import { cardContent } from '../../application-data/content-card-data'
 
 import './info-section.style.scss'
 
-
 const InfoSection = () => {
-  
     return (
-
         <div className='info-section-wrapper'>
-
             <div className="counter-container">
                 {counetrsContent.map((counterItem, index) => {
                     return <Counter
@@ -24,7 +20,6 @@ const InfoSection = () => {
                     />
                 })}
             </div>
-
             <div id='card-content-container' className="card-content-container">
                 {cardContent.map((cardItem, index) => {
                     const imgSide = (index % 2 === 0)

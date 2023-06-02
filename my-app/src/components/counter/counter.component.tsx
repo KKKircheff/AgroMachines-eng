@@ -7,10 +7,10 @@ type CounterProps = {
     countFrom: number,
     countTo: number,
     content: string,
-    countAddOn:string,
+    countAddOn: string,
 }
 
-const Counter = ({ countFrom, countTo, content,countAddOn }: CounterProps) => {
+const Counter = ({ countFrom, countTo, content, countAddOn }: CounterProps) => {
 
     return (
         <div className='info-card' data-aos="fade-in">

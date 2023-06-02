@@ -6,7 +6,7 @@ const BUTTON_TYPE = {
     default: 'default'
 }
 
-export default function Button ({ children, buttonType, ...otherProps }) {
+export default function Button({ children, buttonType, ...otherProps }) {
     return (
         <button
             className={`button-container ${BUTTON_TYPE[buttonType]}`}

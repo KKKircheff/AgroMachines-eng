@@ -2,12 +2,12 @@
 @import '~slick-carousel/slick/slick-theme.css';
 
 .carousel-slider-wrapper {
-  img {
-    object-fit: cover;
-    height: 33vw;
-  }
+    img {
+        object-fit: cover;
+        height: 33vw;
+    }
 }
 
 .slick-slider {
-  touch-action: auto;
+    touch-action: auto;
 }

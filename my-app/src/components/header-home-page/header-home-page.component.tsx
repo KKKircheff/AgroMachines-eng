@@ -6,27 +6,27 @@ import { Link } from 'react-scroll'
 
 const HeaderHomePage = () => {
 
-  return (
-    <div id='header-home-page-wrapper' className="header-home-page-wrapper">
-      <div className="left-side" >
-        <h1 data-aos="fade-right">USED AGRICULTURE</h1>
-        <h1 data-aos="fade-right" data-aos-delay="100">IRRIGATION SYSTES</h1>
-        <h1 data-aos="fade-right" data-aos-delay="200">FROM NETHERLANDS</h1>
-        <Link activeClass="active" to="contact-form-container" spy={true} smooth={true} offset={-100} duration={2000}>
-
-          <Button id='header-button'
-            buttonType={''}
-            data-aos="fade-right"
-            data-aos-delay="200"
-            data-aos-anchor=".left-side"
-          >CONTACT</Button>
-
-        </Link>
-      </div>
-      <div className="right-side" data-aos="fade-left">
-        <img src={headerImage} alt="поливна макара" />
-      </div>
-    </div>
-  )
+    return (
+        <div id='header-home-page-wrapper' className="header-home-page-wrapper">
+            <div className="left-side">
+                <h1 data-aos="fade-right">USED AGRICULTURE</h1>
+                <h1 data-aos="fade-right" data-aos-delay="100">IRRIGATION SYSTES</h1>
+                <h1 data-aos="fade-right" data-aos-delay="200">FROM NETHERLANDS</h1>
+                <Link activeClass="active" to="contact-form-container" spy={true} smooth={true} offset={-100} duration={2000}>
+                    <Button id='header-button'
+                        buttonType={''}
+                        data-aos="fade-right"
+                        data-aos-delay="200"
+                        data-aos-anchor=".left-side"
+                    >
+                        CONTACT
+                    </Button>
+                </Link>
+            </div>
+            <div className="right-side" data-aos="fade-left">
+                <img src={headerImage} alt="поливна макара" />
+            </div>
+        </div>
+    )
 }
 export default HeaderHomePage

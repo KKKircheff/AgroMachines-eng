@@ -1,5 +1,5 @@
 import React from 'react'
-;import { Outlet } from 'react-router-dom';
+    ; import { Outlet } from 'react-router-dom';
 
 import './home.style.scss'
 import "aos/dist/aos.css";
@@ -12,30 +12,31 @@ import { productsData } from '../../application-data/products-data';
 const HistoryGallery = React.lazy(() => import('../../components/history-gallery/history-gallery.component'))
 const Home = () => {
 
-const productCards = productsData.map((product, index)=>{
-  return <ProductCard
-      key={product.url[0]+index}
-      url={product.url}
-      mainTitle={product.mainTitle}
-      title={product.title}
-      subtitle={product.subtitle}
-      content={product.content}
-      price={product.price}
-      imgSide='left'
-  />})
+    const productCards = productsData.map((product, index) => {
+        return <ProductCard
+            key={product.url[0] + index}
+            url={product.url}
+            mainTitle={product.mainTitle}
+            title={product.title}
+            subtitle={product.subtitle}
+            content={product.content}
+            price={product.price}
+            imgSide='left'
+        />
+    })
 
-  return (
-    <div className='home-wrapper'>
+    return (
+        <div className='home-wrapper'>
 
-      <HeaderHomePage />
-      <InfoSection />
-      { productCards && <div id='product-card-wrapper'>{productCards}</div>} 
-      <HistoryGallery />
-      <ContatForm />
-      <FooterHomePage />
-      <Outlet />
-    </div>
-  )
+            <HeaderHomePage />
+            <InfoSection />
+            {productCards && <div id='product-card-wrapper'>{productCards}</div>}
+            <HistoryGallery />
+            <ContatForm />
+            <FooterHomePage />
+            <Outlet />
+        </div>
+    )
 }
 
 export default Home

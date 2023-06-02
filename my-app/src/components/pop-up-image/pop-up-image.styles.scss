@@ -17,9 +17,9 @@
         width: 95%;
         height: 95%;
     }
-  }
-  
-  .screen-overlay-active {
+}
+
+.screen-overlay-active {
     position: fixed;
     top: 0;
     left: 0;
@@ -31,12 +31,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  
-  .screen-overlay-active img {
+}
+
+.screen-overlay-active img {
     margin-top: auto 0;
     max-width: 95%;
     max-height: 95%;
     transform: scale(100%);
     transition: transform 0.3s ease-in-out;
-  }
+}

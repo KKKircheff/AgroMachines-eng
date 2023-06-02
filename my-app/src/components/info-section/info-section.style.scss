@@ -1,41 +1,41 @@
 @import '../../assets/app.colors.scss';
 
 .counter-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  padding: 3vw 0 0 0;
-  background: linear-gradient(to bottom, #ffffff 0%, $background-color 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 3vw 0 0 0;
+    background: linear-gradient(to bottom, #ffffff 0%, $background-color 100%);
 }
 
 .card-content-container {
-  background-color: $background-color;
+    background-color: $background-color;
 }
 
 @media (min-width: 620px) {
-  .counter-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding: 50px 15px;
-  }
+    .counter-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 50px 15px;
+    }
 }
 
 @media (min-width: 720px) {
-  .card-content-container {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
+    .card-content-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
 }
 
 .logos-image-container {
-  margin: 0;
-  background: linear-gradient(to top, #ffffff 0%, $background-color 100%);
+    margin: 0;
+    background: linear-gradient(to top, #ffffff 0%, $background-color 100%);
 
-  img{
-    margin: 8vw 0;
-  width: 100%;
-  }
+    img {
+        margin: 8vw 0;
+        width: 100%;
+    }
 }
