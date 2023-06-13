@@ -1,4 +1,10 @@
-# AgroMAchines 
+# AgroMachines 
+
+English demo version of the origial website: 
+https://agro-machines-eng.netlify.app
+
+Git repository: 
+https://github.com/KKKircheff/AgroMachines-eng
 
 ## Freelance React project
 
